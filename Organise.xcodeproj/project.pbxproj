@@ -12,6 +12,10 @@
 		A2A393221D790C2600B2CB54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2A393201D790C2600B2CB54 /* Main.storyboard */; };
 		A2A393241D790C2600B2CB54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2A393231D790C2600B2CB54 /* Assets.xcassets */; };
 		A2A393271D790C2600B2CB54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2A393251D790C2600B2CB54 /* LaunchScreen.storyboard */; };
+		A2FBF4B71D7912B7001A9320 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF4B61D7912B7001A9320 /* ToDoListViewController.swift */; };
+		A2FBF4B91D791398001A9320 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF4B81D791398001A9320 /* Note.swift */; };
+		A2FBF4BD1D7914EA001A9320 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF4BC1D7914EA001A9320 /* NoteTableViewCell.swift */; };
+		A2FBF4C01D7917CA001A9320 /* NoteContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF4BF1D7917CA001A9320 /* NoteContentViewController.swift */; };
 		B3ECEE3A90FBFA05753CC929 /* Pods_Organise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 825FC897EC946462EC9019AB /* Pods_Organise.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +29,10 @@
 		A2A393231D790C2600B2CB54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2A393261D790C2600B2CB54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2A393281D790C2600B2CB54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2FBF4B61D7912B7001A9320 /* ToDoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
+		A2FBF4B81D791398001A9320 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		A2FBF4BC1D7914EA001A9320 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		A2FBF4BF1D7917CA001A9320 /* NoteContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteContentViewController.swift; sourceTree = "<group>"; };
 		C49EA4DDE53D37C29EF49AEE /* Pods-Organise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Organise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Organise/Pods-Organise.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,13 +78,41 @@
 			isa = PBXGroup;
 			children = (
 				A2A3931C1D790C2600B2CB54 /* AppDelegate.swift */,
-				A2A3931E1D790C2600B2CB54 /* CalendarViewController.swift */,
+				A2FBF4BA1D7914BD001A9320 /* ViewControllers */,
+				A2FBF4BE1D7914F2001A9320 /* Views */,
+				A2FBF4BB1D7914C9001A9320 /* Models */,
 				A2A393201D790C2600B2CB54 /* Main.storyboard */,
 				A2A393231D790C2600B2CB54 /* Assets.xcassets */,
 				A2A393251D790C2600B2CB54 /* LaunchScreen.storyboard */,
 				A2A393281D790C2600B2CB54 /* Info.plist */,
 			);
 			path = Organise;
+			sourceTree = "<group>";
+		};
+		A2FBF4BA1D7914BD001A9320 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2A3931E1D790C2600B2CB54 /* CalendarViewController.swift */,
+				A2FBF4B61D7912B7001A9320 /* ToDoListViewController.swift */,
+				A2FBF4BF1D7917CA001A9320 /* NoteContentViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A2FBF4BB1D7914C9001A9320 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A2FBF4B81D791398001A9320 /* Note.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A2FBF4BE1D7914F2001A9320 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2FBF4BC1D7914EA001A9320 /* NoteTableViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		FC6903BB0B3D3FE09913B0F9 /* Pods */ = {
@@ -211,7 +247,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2A3931F1D790C2600B2CB54 /* CalendarViewController.swift in Sources */,
+				A2FBF4B71D7912B7001A9320 /* ToDoListViewController.swift in Sources */,
 				A2A3931D1D790C2600B2CB54 /* AppDelegate.swift in Sources */,
+				A2FBF4BD1D7914EA001A9320 /* NoteTableViewCell.swift in Sources */,
+				A2FBF4C01D7917CA001A9320 /* NoteContentViewController.swift in Sources */,
+				A2FBF4B91D791398001A9320 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
