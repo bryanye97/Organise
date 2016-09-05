@@ -12,6 +12,13 @@ class NoteTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     
+    var note: Note? {
+        didSet {
+            guard let note = note else { return }
+            titleLabel.text = note.title
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

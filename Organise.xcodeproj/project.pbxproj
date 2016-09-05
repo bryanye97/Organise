@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A200DDD31D7A76FC007EA9AA /* CalendarCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A200DDD21D7A76FC007EA9AA /* CalendarCellView.xib */; };
+		A200DDD51D7A772F007EA9AA /* CalendarCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200DDD41D7A772F007EA9AA /* CalendarCellView.swift */; };
+		A200DDD71D7A8115007EA9AA /* EventHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200DDD61D7A8115007EA9AA /* EventHelper.swift */; };
+		A200DDD91D7A81E4007EA9AA /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200DDD81D7A81E4007EA9AA /* AddEventViewController.swift */; };
+		A200DDDB1D7D13F7007EA9AA /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200DDDA1D7D13F7007EA9AA /* AnimationHelper.swift */; };
 		A2A3931D1D790C2600B2CB54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A3931C1D790C2600B2CB54 /* AppDelegate.swift */; };
 		A2A3931F1D790C2600B2CB54 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A3931E1D790C2600B2CB54 /* CalendarViewController.swift */; };
 		A2A393221D790C2600B2CB54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2A393201D790C2600B2CB54 /* Main.storyboard */; };
 		A2A393241D790C2600B2CB54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2A393231D790C2600B2CB54 /* Assets.xcassets */; };
 		A2A393271D790C2600B2CB54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2A393251D790C2600B2CB54 /* LaunchScreen.storyboard */; };
+		A2BD7E5A1D7937D400A73B6F /* UI Color Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD7E591D7937D400A73B6F /* UI Color Extension.swift */; };
+		A2E29B4E1D7922D50011B64F /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E29B4D1D7922D50011B64F /* RealmHelper.swift */; };
 		A2FBF4B71D7912B7001A9320 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF4B61D7912B7001A9320 /* ToDoListViewController.swift */; };
 		A2FBF4B91D791398001A9320 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF4B81D791398001A9320 /* Note.swift */; };
 		A2FBF4BD1D7914EA001A9320 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF4BC1D7914EA001A9320 /* NoteTableViewCell.swift */; };
@@ -22,6 +29,11 @@
 /* Begin PBXFileReference section */
 		11F471A933B586A83BD1D7D9 /* Pods-Organise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Organise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Organise/Pods-Organise.release.xcconfig"; sourceTree = "<group>"; };
 		825FC897EC946462EC9019AB /* Pods_Organise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Organise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A200DDD21D7A76FC007EA9AA /* CalendarCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarCellView.xib; sourceTree = "<group>"; };
+		A200DDD41D7A772F007EA9AA /* CalendarCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCellView.swift; sourceTree = "<group>"; };
+		A200DDD61D7A8115007EA9AA /* EventHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventHelper.swift; sourceTree = "<group>"; };
+		A200DDD81D7A81E4007EA9AA /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		A200DDDA1D7D13F7007EA9AA /* AnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
 		A2A393191D790C2600B2CB54 /* Organise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Organise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A3931C1D790C2600B2CB54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2A3931E1D790C2600B2CB54 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +41,8 @@
 		A2A393231D790C2600B2CB54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2A393261D790C2600B2CB54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2A393281D790C2600B2CB54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2BD7E591D7937D400A73B6F /* UI Color Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UI Color Extension.swift"; sourceTree = "<group>"; };
+		A2E29B4D1D7922D50011B64F /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		A2FBF4B61D7912B7001A9320 /* ToDoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 		A2FBF4B81D791398001A9320 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		A2FBF4BC1D7914EA001A9320 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
@@ -81,6 +95,8 @@
 				A2FBF4BA1D7914BD001A9320 /* ViewControllers */,
 				A2FBF4BE1D7914F2001A9320 /* Views */,
 				A2FBF4BB1D7914C9001A9320 /* Models */,
+				A2E29B4C1D7922BA0011B64F /* Helpers */,
+				A2BD7E581D7937C200A73B6F /* Extensions */,
 				A2A393201D790C2600B2CB54 /* Main.storyboard */,
 				A2A393231D790C2600B2CB54 /* Assets.xcassets */,
 				A2A393251D790C2600B2CB54 /* LaunchScreen.storyboard */,
@@ -89,10 +105,29 @@
 			path = Organise;
 			sourceTree = "<group>";
 		};
+		A2BD7E581D7937C200A73B6F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A2BD7E591D7937D400A73B6F /* UI Color Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		A2E29B4C1D7922BA0011B64F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A2E29B4D1D7922D50011B64F /* RealmHelper.swift */,
+				A200DDD61D7A8115007EA9AA /* EventHelper.swift */,
+				A200DDDA1D7D13F7007EA9AA /* AnimationHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		A2FBF4BA1D7914BD001A9320 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				A2A3931E1D790C2600B2CB54 /* CalendarViewController.swift */,
+				A200DDD81D7A81E4007EA9AA /* AddEventViewController.swift */,
 				A2FBF4B61D7912B7001A9320 /* ToDoListViewController.swift */,
 				A2FBF4BF1D7917CA001A9320 /* NoteContentViewController.swift */,
 			);
@@ -111,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				A2FBF4BC1D7914EA001A9320 /* NoteTableViewCell.swift */,
+				A200DDD21D7A76FC007EA9AA /* CalendarCellView.xib */,
+				A200DDD41D7A772F007EA9AA /* CalendarCellView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -187,6 +224,7 @@
 			files = (
 				A2A393271D790C2600B2CB54 /* LaunchScreen.storyboard in Resources */,
 				A2A393241D790C2600B2CB54 /* Assets.xcassets in Resources */,
+				A200DDD31D7A76FC007EA9AA /* CalendarCellView.xib in Resources */,
 				A2A393221D790C2600B2CB54 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,7 +287,13 @@
 				A2A3931F1D790C2600B2CB54 /* CalendarViewController.swift in Sources */,
 				A2FBF4B71D7912B7001A9320 /* ToDoListViewController.swift in Sources */,
 				A2A3931D1D790C2600B2CB54 /* AppDelegate.swift in Sources */,
+				A200DDD51D7A772F007EA9AA /* CalendarCellView.swift in Sources */,
+				A200DDD71D7A8115007EA9AA /* EventHelper.swift in Sources */,
 				A2FBF4BD1D7914EA001A9320 /* NoteTableViewCell.swift in Sources */,
+				A2E29B4E1D7922D50011B64F /* RealmHelper.swift in Sources */,
+				A200DDD91D7A81E4007EA9AA /* AddEventViewController.swift in Sources */,
+				A200DDDB1D7D13F7007EA9AA /* AnimationHelper.swift in Sources */,
+				A2BD7E5A1D7937D400A73B6F /* UI Color Extension.swift in Sources */,
 				A2FBF4C01D7917CA001A9320 /* NoteContentViewController.swift in Sources */,
 				A2FBF4B91D791398001A9320 /* Note.swift in Sources */,
 			);

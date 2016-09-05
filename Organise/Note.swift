@@ -7,15 +7,11 @@
 //
 
 import Foundation
+import Realm
+import RealmSwift
 
-class Note {
-    var title: String
-    var content: String
-    var modificationTime: NSDate
-    
-    init(title: String, content: String, modificationTime: NSDate) {
-        self.title = title
-        self.content = title
-        self.modificationTime = modificationTime
-    }
+class Note: Object {
+    dynamic var title: String = ""
+    dynamic var content: String = ""
+    dynamic var modificationTime: NSDate = NSDate()
 }

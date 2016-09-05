@@ -15,28 +15,33 @@ class NoteContentViewController: UIViewController {
 
     @IBOutlet weak var noteTitleTextField: UITextField!
     
-    @IBOutlet weak var noteContentTextField: UITextView!
+    @IBOutlet weak var noteContentTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "saveNote" {
+            let destinationViewController = segue.destinationViewController as! ToDoListViewController
+            if let note = note {
+                let updatedNote = Note()
+                updatedNote.title = noteTitleTextField.text ?? ""
+                updatedNote.content = noteContentTextView.text ?? ""
+                RealmHelper.updateNote(note, newNote: updatedNote)
+            } else {
+                let newNote = Note()
+                newNote.title = noteTitleTextField.text ?? ""
+                newNote.content = noteContentTextView.text ?? ""
+                newNote.modificationTime = NSDate()
+                
+                RealmHelper.addNote(newNote)
+            }
+            
+            destinationViewController.notesDataSource = RealmHelper.retrieveNotes()
+            
+        }
     }
-    */
-
 }
+
