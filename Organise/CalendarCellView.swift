@@ -36,6 +36,27 @@ class CalendarCellView: JTAppleDayCellView {
         selectedCellView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0)
     }
     
+    func configureViewIntoBubbleView(cellState: CellState, animateDeselection: Bool = false) {
+        if cellState.isSelected {
+            self.selectedCellView.layer.cornerRadius =  self.selectedCellView.frame.width  / 2
+            self.selectedCellView.hidden = false
+            configureTextColor(cellState)
+            
+        } else {
+            if animateDeselection {
+                configureTextColor(cellState)
+                if selectedCellView.hidden == false {
+                    selectedCellView.animateWithFadeEffect(withCompletionHandler: { () -> Void in
+                        self.selectedCellView.hidden = true
+                        self.selectedCellView.alpha = 1
+                    })
+                }
+            } else {
+                selectedCellView.hidden = true
+            }
+        }
+    }
+    
     func configureTextColor(cellState: CellState) {
         if cellState.dateBelongsTo == .ThisMonth {
             dayLabel.textColor = normalDayColor

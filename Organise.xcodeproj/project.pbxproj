@@ -12,12 +12,13 @@
 		A200DDD71D7A8115007EA9AA /* EventHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200DDD61D7A8115007EA9AA /* EventHelper.swift */; };
 		A200DDD91D7A81E4007EA9AA /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200DDD81D7A81E4007EA9AA /* AddEventViewController.swift */; };
 		A200DDDB1D7D13F7007EA9AA /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200DDDA1D7D13F7007EA9AA /* AnimationHelper.swift */; };
+		A200DDDD1D7D4EF6007EA9AA /* UIVIew Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200DDDC1D7D4EF6007EA9AA /* UIVIew Extension.swift */; };
 		A2A3931D1D790C2600B2CB54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A3931C1D790C2600B2CB54 /* AppDelegate.swift */; };
 		A2A3931F1D790C2600B2CB54 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A3931E1D790C2600B2CB54 /* CalendarViewController.swift */; };
 		A2A393221D790C2600B2CB54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2A393201D790C2600B2CB54 /* Main.storyboard */; };
 		A2A393241D790C2600B2CB54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2A393231D790C2600B2CB54 /* Assets.xcassets */; };
 		A2A393271D790C2600B2CB54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2A393251D790C2600B2CB54 /* LaunchScreen.storyboard */; };
-		A2BD7E5A1D7937D400A73B6F /* UI Color Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD7E591D7937D400A73B6F /* UI Color Extension.swift */; };
+		A2BD7E5A1D7937D400A73B6F /* UIColor Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD7E591D7937D400A73B6F /* UIColor Extension.swift */; };
 		A2E29B4E1D7922D50011B64F /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E29B4D1D7922D50011B64F /* RealmHelper.swift */; };
 		A2FBF4B71D7912B7001A9320 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF4B61D7912B7001A9320 /* ToDoListViewController.swift */; };
 		A2FBF4B91D791398001A9320 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF4B81D791398001A9320 /* Note.swift */; };
@@ -34,6 +35,7 @@
 		A200DDD61D7A8115007EA9AA /* EventHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventHelper.swift; sourceTree = "<group>"; };
 		A200DDD81D7A81E4007EA9AA /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		A200DDDA1D7D13F7007EA9AA /* AnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
+		A200DDDC1D7D4EF6007EA9AA /* UIVIew Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew Extension.swift"; sourceTree = "<group>"; };
 		A2A393191D790C2600B2CB54 /* Organise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Organise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A3931C1D790C2600B2CB54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2A3931E1D790C2600B2CB54 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +43,7 @@
 		A2A393231D790C2600B2CB54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2A393261D790C2600B2CB54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2A393281D790C2600B2CB54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2BD7E591D7937D400A73B6F /* UI Color Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UI Color Extension.swift"; sourceTree = "<group>"; };
+		A2BD7E591D7937D400A73B6F /* UIColor Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor Extension.swift"; sourceTree = "<group>"; };
 		A2E29B4D1D7922D50011B64F /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		A2FBF4B61D7912B7001A9320 /* ToDoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 		A2FBF4B81D791398001A9320 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
@@ -108,7 +110,8 @@
 		A2BD7E581D7937C200A73B6F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A2BD7E591D7937D400A73B6F /* UI Color Extension.swift */,
+				A2BD7E591D7937D400A73B6F /* UIColor Extension.swift */,
+				A200DDDC1D7D4EF6007EA9AA /* UIVIew Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -289,11 +292,12 @@
 				A2A3931D1D790C2600B2CB54 /* AppDelegate.swift in Sources */,
 				A200DDD51D7A772F007EA9AA /* CalendarCellView.swift in Sources */,
 				A200DDD71D7A8115007EA9AA /* EventHelper.swift in Sources */,
+				A200DDDD1D7D4EF6007EA9AA /* UIVIew Extension.swift in Sources */,
 				A2FBF4BD1D7914EA001A9320 /* NoteTableViewCell.swift in Sources */,
 				A2E29B4E1D7922D50011B64F /* RealmHelper.swift in Sources */,
 				A200DDD91D7A81E4007EA9AA /* AddEventViewController.swift in Sources */,
 				A200DDDB1D7D13F7007EA9AA /* AnimationHelper.swift in Sources */,
-				A2BD7E5A1D7937D400A73B6F /* UI Color Extension.swift in Sources */,
+				A2BD7E5A1D7937D400A73B6F /* UIColor Extension.swift in Sources */,
 				A2FBF4C01D7917CA001A9320 /* NoteContentViewController.swift in Sources */,
 				A2FBF4B91D791398001A9320 /* Note.swift in Sources */,
 			);
