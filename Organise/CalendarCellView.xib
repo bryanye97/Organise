@@ -12,22 +12,23 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EMU-rD-vWe" userLabel="Selected View">
+                    <rect key="frame" x="150" y="150" width="300" height="300"/>
+                    <color key="backgroundColor" red="0.90196078431372551" green="0.15294117647058825" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="EMU-rD-vWe" secondAttribute="height" multiplier="1:1" id="HPd-dJ-gZC"/>
+                    </constraints>
+                </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31290312091329013290231983219312" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IM5-Un-Feh">
                     <rect key="frame" x="145" y="290" width="309" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EMU-rD-vWe" userLabel="Selected View">
-                    <rect key="frame" x="90" y="90" width="420" height="420"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="EMU-rD-vWe" secondAttribute="height" multiplier="1:1" id="HPd-dJ-gZC"/>
-                    </constraints>
-                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="EMU-rD-vWe" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.7" id="Frg-Hb-coa"/>
+                <constraint firstItem="EMU-rD-vWe" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="Frg-Hb-coa"/>
                 <constraint firstItem="EMU-rD-vWe" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="NY1-85-i7G"/>
                 <constraint firstItem="IM5-Un-Feh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ww1-Ux-tOc"/>
                 <constraint firstItem="EMU-rD-vWe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ck0-Xp-FD5"/>

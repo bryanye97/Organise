@@ -11,7 +11,8 @@ import UIKit
 extension UIColor {
 
     static func organiseRedColor() -> UIColor {
-    //E62739
+    //Hex value: E62739
+        
     return UIColor(red:230/255.0, green:39/255.0, blue:57/255.0, alpha: 1)
     }
     
