@@ -12,11 +12,10 @@ import JTAppleCalendar
 
 class CalendarViewController: UIViewController {
     
-    let numberOfRows = 6
+    let numberOfRows = 5
     let formatter = NSDateFormatter()
     let testCalendar: NSCalendar! = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
-    
-    var selectedDate: NSDate!
+    var selectedDate: NSDate?
     
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var monthLabel: UILabel!
@@ -30,7 +29,20 @@ class CalendarViewController: UIViewController {
         calendarView.delegate = self
         calendarView.dataSource = self
         calendarView.registerCellViewXib(fileName: "CalendarCellView")
+        
+        calendarView.direction = .Horizontal
         calendarView.cellInset = CGPoint(x: 0, y: 0)
+        calendarView.allowsMultipleSelection = false
+        calendarView.firstDayOfWeek = .Sunday
+        calendarView.scrollEnabled = true
+        calendarView.scrollingMode = .StopAtEachCalendarFrameWidth
+        calendarView.itemSize = nil
+        calendarView.rangeSelectionWillBeUsed = false
+        calendarView.reloadData()
+
+        calendarView.scrollToDate(NSDate(), triggerScrollToDateDelegate: true, animateScroll: false) {
+            self.selectTodaysDate()
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,15 +50,11 @@ class CalendarViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func selectDate() {
-        for date in calendarView.selectedDates {
-            selectedDate = date
-            print(selectedDate)
-        }
-    }
+
     
-    func selectTodaydate() {
-        self.calendarView.selectDates([NSDate()], triggerSelectionDelegate: true)
+    func selectTodaysDate() {
+        let date = NSDate()
+        calendarView.selectDates([date])
     }
     
     func convertMonthIntegerToString(month: Int) -> String {
@@ -63,6 +71,26 @@ class CalendarViewController: UIViewController {
         let year = NSCalendar.currentCalendar().component(NSCalendarUnit.Year, fromDate: startDate)
         monthLabel.text = monthName
         yearLabel.text = String(year)
+    }
+    
+    func selectDate() {
+        for date in calendarView.selectedDates {
+            selectedDate = date
+            print(selectedDate)
+        }
+    }
+
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "addEvent" {
+            let destinationViewController = segue.destinationViewController as! AddEventViewController
+            guard let selectedDate = selectedDate else { return }
+            destinationViewController.eventDate = selectedDate
+        }
+    }
+    
+    @IBAction func unwindToCalendarViewController(segue: UIStoryboardSegue) {
+        
     }
 }
 
@@ -91,6 +119,10 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
     
     func calendar(calendar: JTAppleCalendarView, didDeselectDate date: NSDate, cell: JTAppleDayCellView?, cellState: CellState) {
         (cell as? CalendarCellView)?.cellSelectionChanged(cellState)
+    }
+    
+    func calendar(calendar: JTAppleCalendarView, didScrollToDateSegmentStartingWithdate startDate: NSDate, endingWithDate endDate: NSDate) {
+        setupViewsOfCalendar(startDate, endDate: endDate)
     }
     
 }
